@@ -1652,9 +1652,6 @@
       },
       "ChildConfiguration": {
         "description": "Child configuration object.",
-        "required": [
-          "properties"
-        ],
         "type": "object",
         "properties": {
           "properties": {
@@ -1721,12 +1718,6 @@
       },
       "ChildConfigurationProperties": {
         "description": "Properties of child configuration.",
-        "required": [
-          "childConfigurationType",
-          "isPartOfBaseConfiguration",
-          "minimumQuantity",
-          "maximumQuantity"
-        ],
         "type": "object",
         "properties": {
           "childConfigurationType": {
@@ -1808,21 +1799,7 @@
                 ]
               }
             },
-            "readOnly": true,
-            "x-ms-enum": {
-              "name": "ChildConfigurationType",
-              "modelAsString": true,
-              "values": [
-                {
-                  "value": "DeviceConfiguration",
-                  "description": "Child configuration is a device configuration."
-                },
-                {
-                  "value": "AdditionalConfiguration",
-                  "description": "Child configuration is an additional configuration."
-                }
-              ]
-            }
+            "readOnly": true
           },
           "groupedChildConfigurations": {
             "description": "Child configurations present for the configuration after applying child configuration filter, grouped by the category name of the child configuration.",
@@ -1925,7 +1902,7 @@
           },
           "quantity": {
             "format": "int32",
-            "description": "Quantity.",
+            "description": "Quantity of the product.",
             "type": "integer",
             "readOnly": true
           },
@@ -2466,10 +2443,6 @@
       },
       "GroupedChildConfigurations": {
         "description": "Grouped child configuration object.",
-        "required": [
-          "categoryInformation",
-          "childConfigurations"
-        ],
         "type": "object",
         "properties": {
           "categoryInformation": {

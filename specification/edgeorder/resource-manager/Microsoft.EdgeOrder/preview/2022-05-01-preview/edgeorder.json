@@ -1698,20 +1698,6 @@
                   }
                 ]
               }
-            },
-            "x-ms-enum": {
-              "name": "ChildConfigurationType",
-              "modelAsString": true,
-              "values": [
-                {
-                  "value": "DeviceConfiguration",
-                  "description": "Child configuration is a device configuration."
-                },
-                {
-                  "value": "AdditionalConfiguration",
-                  "description": "Child configuration is an additional configuration."
-                }
-              ]
             }
           }
         }
@@ -2013,21 +1999,7 @@
                 ]
               }
             },
-            "readOnly": true,
-            "x-ms-enum": {
-              "name": "ChildConfigurationType",
-              "modelAsString": true,
-              "values": [
-                {
-                  "value": "DeviceConfiguration",
-                  "description": "Child configuration is a device configuration."
-                },
-                {
-                  "value": "AdditionalConfiguration",
-                  "description": "Child configuration is an additional configuration."
-                }
-              ]
-            }
+            "readOnly": true
           },
           "groupedChildConfigurations": {
             "description": "Child configurations present for the configuration after applying child configuration filter, grouped by the category name of the child configuration.",
